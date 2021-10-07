@@ -32,4 +32,18 @@ describe('Navegação e Funcionalidade', () => {
   it('deve ter três elementos após a eliminação do primeiro', () => {
     cy.get('[id="listaTodos"]').children().should('have.length', 3)
   })
+  it('deve mostrar mensagem de lista vazia após eliminação das tarefas', () => {
+    const mensagem = 'a Todo-List está vazia, adicione uma tarefa...'
+    for (let i = 0; i < 3; i++) {
+      cy.get('[id="listaTodos"]')
+        .children()
+        .first()
+        .children()
+        .last()
+        .children()
+        .last()
+        .click()
+    }
+    cy.get('[id="listaVazia"').should('contain', mensagem)
+  })
 })
