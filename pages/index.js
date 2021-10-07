@@ -51,11 +51,11 @@ function App() {
 
       <div className="flex flex-col py-2 ">
         {todos.length > 0 ? (
-          <div className="text-lg font-semibold">
+          <div id="tituloLista" className="text-lg font-semibold">
             A seguir a Lista de Tarefas...
           </div>
         ) : (
-          <div className="text-lg font-semibold text-red-800">
+          <div id="listaVazia" className="text-lg font-semibold text-red-800">
             a Todo-List está vazia, adicione uma tarefa...
           </div>
         )}

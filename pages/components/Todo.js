@@ -13,12 +13,14 @@ export default function Todo({ todo, index, completeTodo, removeTodo, id }) {
       <div id={id}>{text}</div>
       <div>
         <button
+          id={`btnCompletar-${index}`}
           className="font-bold text-green-800 "
           onClick={() => completeTodo(index)}
         >
           ✔
         </button>
         <button
+          id={`btn_remover-${index}`}
           className="font-bold text-red-800 "
           onClick={() => removeTodo(index)}
         >
