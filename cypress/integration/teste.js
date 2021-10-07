@@ -25,4 +25,7 @@ describe('Navigation', () => {
       .last()
       .click()
   })
+  it('deve ter três elementos após a eliminação do primeiro', () => {
+    cy.get('[id="listaTodos"]').children().should('have.length', 3)
+  })
 })
