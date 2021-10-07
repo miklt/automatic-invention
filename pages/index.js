@@ -59,7 +59,7 @@ function App() {
             a Todo-List está vazia, adicione uma tarefa...
           </div>
         )}
-        <div className="flex flex-col items-center py-2 ">
+        <div className="flex flex-col items-center py-2" id={'listaTodos'}>
           {todos.map((todo, index) => (
             <Todo
               key={uuid()}

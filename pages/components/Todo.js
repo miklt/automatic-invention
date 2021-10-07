@@ -7,6 +7,7 @@ export default function Todo({ todo, index, completeTodo, removeTodo, id }) {
   }
   return (
     <div
+      id={`${index}`}
       className="flex flex-row justify-start px-2 text-lg"
       style={{ textDecoration: isCompleted ? 'line-through' : '' }}
     >
