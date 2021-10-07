@@ -4,7 +4,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "cypress open"
+    "test": "cypress open ",
+    "test-video": "cypress run"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.3.4",
