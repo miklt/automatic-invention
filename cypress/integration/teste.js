@@ -1,4 +1,4 @@
-describe('Navigation', () => {
+describe('Navegação e Funcionalidade', () => {
   it('deve carregar a página', () => {
     cy.visit('http://localhost:3000/')
   })
