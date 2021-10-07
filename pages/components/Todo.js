@@ -1,4 +1,4 @@
-export default function Todo({ todo, index, completeTodo, removeTodo }) {
+export default function Todo({ todo, index, completeTodo, removeTodo, id }) {
   let isCompleted = false
   let text = ''
   if (todo) {
@@ -8,10 +8,9 @@ export default function Todo({ todo, index, completeTodo, removeTodo }) {
   return (
     <div
       className="flex flex-row justify-start px-2 text-lg"
-      id={index}
       style={{ textDecoration: isCompleted ? 'line-through' : '' }}
     >
-      <div>{text}</div>
+      <div id={id}>{text}</div>
       <div>
         <button
           className="font-bold text-green-800 "

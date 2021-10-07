@@ -1,6 +1,7 @@
 import Todo from './components/Todo'
 import TodoForm from './components/TodoForm'
 import { useState } from 'react'
+import uuid from 'react-uuid'
 function App() {
   const [todos, setTodos] = useState([
     {
@@ -61,7 +62,8 @@ function App() {
         <div className="flex flex-col items-center py-2 ">
           {todos.map((todo, index) => (
             <Todo
-              key={index}
+              key={uuid()}
+              id={uuid()}
               index={index}
               todo={todo}
               completeTodo={completeTodo}
